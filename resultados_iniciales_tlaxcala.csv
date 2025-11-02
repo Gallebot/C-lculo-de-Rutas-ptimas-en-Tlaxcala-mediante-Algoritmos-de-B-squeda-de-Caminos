@@ -1,0 +1,2 @@
+dijkstra_time_ms,astar_time_ms,dijkstra_dist_m,astar_dist_m,speedup_A*_vs_Dijkstra,eficiencia,dijkstra_precision,dijkstra_recall,dijkstra_f1,astar_precision,astar_recall,astar_f1,origen,destino
+279.0765000099782,95.34020000137389,14058.823311676057,19374.486292066224,2.9271650364269908,2.9271650364269908,1.0,1.0,1.0,0.07857142857142857,0.102803738317757,0.08906882591093117,A,B
