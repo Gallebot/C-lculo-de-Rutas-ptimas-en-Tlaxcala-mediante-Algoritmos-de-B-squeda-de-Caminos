@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8bc5476de56be8433f613f3d2d40e6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8bc5476de56be8433f613f3d2d40e6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8bc5476de56be8433f613f3d2d40e6f = L.map(
+                "map_a8bc5476de56be8433f613f3d2d40e6f",
+                {
+                    center: [19.2015776, -98.2508894],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd38ea993407c257f7546c6d8e81921b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bd38ea993407c257f7546c6d8e81921b.addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            var poly_line_87487fbb44627b38cea283b458252115 = L.polyline(
+                [[19.2015776, -98.2508894], [19.199131, -98.2520494], [19.1972774, -98.2532415], [19.1952667, -98.2524555], [19.1941977, -98.2532093], [19.1932404, -98.2539054], [19.192226, -98.2547083], [19.1918006, -98.2550447], [19.1890701, -98.2584774], [19.1775776, -98.2618072], [19.1934297, -98.2876614], [19.1897821, -98.2905203]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_87487fbb44627b38cea283b458252115.bindTooltip(
+                `<div>
+                     Ruta base / con tráfico
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_09844ef9eb80acacd834c49355dd2cb8 = L.polyline(
+                [[19.1941977, -98.2532093], [19.1932404, -98.2539054]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_09844ef9eb80acacd834c49355dd2cb8.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5e603c6b6701a3f872034992745c67e1 = L.polyline(
+                [[19.192226, -98.2547083], [19.1918006, -98.2550447]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_5e603c6b6701a3f872034992745c67e1.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_841b10e64bea996f9e68e0524a002b4e = L.polyline(
+                [[19.1972774, -98.2532415], [19.1963135, -98.2538614], [19.1962325, -98.2538825], [19.1961542, -98.2538245], [19.1952667, -98.2524555]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_841b10e64bea996f9e68e0524a002b4e.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_632305874db18ca914a8e8b772a577a8 = L.polyline(
+                [[19.1932404, -98.2539054], [19.192226, -98.2547083]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_632305874db18ca914a8e8b772a577a8.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e396b26e1c2cde471b1be527287987df = L.polyline(
+                [[19.2015776, -98.2508894], [19.2014123, -98.2510639], [19.2011604, -98.2513334], [19.2010172, -98.2515205], [19.2004376, -98.2523833], [19.2003146, -98.2525871], [19.2002222, -98.2526935], [19.2001172, -98.2527429], [19.2000109, -98.2527598], [19.1998765, -98.2527437], [19.1997978, -98.2526981], [19.1997192, -98.2526301], [19.199131, -98.2520494]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_e396b26e1c2cde471b1be527287987df.bindTooltip(
+                `<div>
+                     Vel. actual: 25 km/h | Libre: 25 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d8e899422d75b20f2fa6377339eaa5bc = L.polyline(
+                [[19.199131, -98.2520494], [19.1972774, -98.2532415]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_d8e899422d75b20f2fa6377339eaa5bc.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_40dac1c843dcabcb9866bb3449b30b7c = L.polyline(
+                [[19.1952667, -98.2524555], [19.1951151, -98.2525353], [19.1941977, -98.2532093]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_40dac1c843dcabcb9866bb3449b30b7c.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5e997e814e1ddd235837c0ceb5b1d306 = L.polyline(
+                [[19.1918006, -98.2550447], [19.1906526, -98.2559536], [19.1901942, -98.2562988], [19.1900844, -98.2564009], [19.1899508, -98.2565329], [19.1898254, -98.2566663], [19.1897406, -98.2568859], [19.1894904, -98.2580115], [19.1893954, -98.2581957], [19.1892779, -98.2583217], [19.1890701, -98.2584774]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_5e997e814e1ddd235837c0ceb5b1d306.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3cda590eeb71f59fddd6391a7eae7d35 = L.polyline(
+                [[19.1775776, -98.2618072], [19.180112, -98.2659202], [19.1823822, -98.2696764], [19.1825175, -98.2698874], [19.1825859, -98.2699983], [19.1855768, -98.2748509], [19.1877077, -98.278254], [19.1911447, -98.2838588], [19.1922944, -98.2858459], [19.1934297, -98.2876614]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_3cda590eeb71f59fddd6391a7eae7d35.bindTooltip(
+                `<div>
+                     Vel. actual: 21 km/h | Libre: 21 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4d05fc0d3f62c98cc23df1034f59416b = L.polyline(
+                [[19.1934297, -98.2876614], [19.1925129, -98.2883678], [19.1915944, -98.2890382], [19.1913083, -98.2892576], [19.1906167, -98.2898134], [19.1903445, -98.2900295], [19.1900038, -98.2903098], [19.1898873, -98.290417], [19.1898201, -98.2904747], [19.1897821, -98.2905203]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_4d05fc0d3f62c98cc23df1034f59416b.bindTooltip(
+                `<div>
+                     Vel. actual: 43 km/h | Libre: 43 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a77518ff5195c2e9adb198dafb03fb83 = L.polyline(
+                [[19.1890701, -98.2584774], [19.18697, -98.2595693], [19.1869138, -98.2595904], [19.1866492, -98.2597043], [19.1865395, -98.2597334], [19.1864146, -98.259718], [19.1831487, -98.2587172], [19.1829546, -98.2586762], [19.1827318, -98.258653], [19.1825719, -98.2586664], [19.1820767, -98.2589807], [19.1810843, -98.2596004], [19.1792429, -98.2607523], [19.1791358, -98.2608135], [19.1789802, -98.260916], [19.1775776, -98.2618072]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_a8bc5476de56be8433f613f3d2d40e6f);
+        
+    
+            poly_line_a77518ff5195c2e9adb198dafb03fb83.bindTooltip(
+                `<div>
+                     Vel. actual: 41 km/h | Libre: 41 km/h | ratio: 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
