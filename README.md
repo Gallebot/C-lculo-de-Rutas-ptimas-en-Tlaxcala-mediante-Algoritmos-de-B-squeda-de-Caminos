@@ -50,19 +50,34 @@ Es necesario seguir estos pasos **en orden**:
 - Los botones **Run** > **Run All Cells** de Jupyter Notebook.
 
 ---
-Ejecución
+## Ejecución
 
-1. Se solicitarán las coordenadas del punto del que se desee partir, si se teclea "1" se pueden ingresar las coordenadas manualmente en el formato **(19.323118, -98.233548)** o para mayor comodidad, se teclea "2" para utilizar un punto de los sugeridos en la lista tecleando su número correspondiente.
-![Paso 1: Ingresar puntos](img/1.png)
-2. Una vez ingresado el punto de partida, se pregunta si se desea agregar otro punto, se teclea "s" para **Si* y "n" para **No**.
-![Paso 2: Agregar más puntos opcionales](img/2.png)
-3. En caso de seleccionar **Si**, se solicitarán una vez más las coordenadas.
-   Este proceso puede realizarse para cualquier número de puntos, la única limitante son los tokens de TOMTOM API KEY, como recomendación, 14 puntos es el límite de los créditos disponibles en la versión gratuita de dicha API.
-4. Una vez se seleccione que ya no se quieren ingresar más puntos, se preguntará el tipo de viaje que se desea realizar:
-   Teclear "1" para elegir el viaje en **Auto**.
-   Teclear "2" para elegir el viaje **Caminando**.
-Se importará automaticamente el archivo .plk para una ejecución más rápida
-![Paso 3: Ingresar el tipo de viaje](img/3.png)
+1. Se solicitarán las coordenadas del punto del que se desee partir.  
+   Si se teclea `"1"` se pueden ingresar las coordenadas manualmente en el formato  
+   **(19.323118, -98.233548)**.  
+   Para mayor comodidad, se puede teclear `"2"` para utilizar un punto sugerido de la lista,
+   ingresando su número correspondiente.
+
+   ![Paso 1: Ingresar puntos](img/1.png)
+
+2. Una vez ingresado el punto de partida, se pregunta si se desea agregar otro punto.  
+   Se teclea `"s"` para **Sí** y `"n"` para **No**.
+
+   ![Paso 2: Agregar más puntos opcionales](img/2.png)
+
+3. En caso de seleccionar **Sí**, se solicitarán nuevamente las coordenadas.  
+   Este proceso puede realizarse para cualquier número de puntos.  
+   La única limitante son los tokens de la **TOMTOM API KEY**; como recomendación,
+   **14 puntos** es el límite aproximado de los créditos disponibles en la versión gratuita.
+
+4. Una vez que se selecciona que ya no se desean ingresar más puntos, se preguntará
+   el tipo de viaje que se desea realizar:
+   - Teclear `"1"` para elegir el viaje en **Auto**
+   - Teclear `"2"` para elegir el viaje **Caminando**
+
+   Para una ejecución más rápida, se importará automáticamente el archivo `.pkl`.
+
+   ![Paso 3: Ingresar el tipo de viaje](img/3.png)
 
 ---
 ## Resultados
