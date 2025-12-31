@@ -53,9 +53,9 @@ Es necesario seguir estos pasos **en orden**:
 ## Ejecución
 
 1. Se solicitarán las coordenadas del punto del que se desee partir.  
-   Si se teclea `"1"` se pueden ingresar las coordenadas manualmente en el formato  
+   Si se teclea `"2"` se pueden ingresar las coordenadas manualmente en el formato  
    **(19.323118, -98.233548)**.  
-   Para mayor comodidad, se puede teclear `"2"` para utilizar un punto sugerido de la lista,
+   Para mayor comodidad, se puede teclear `"1"` para utilizar un punto sugerido de la lista,
    ingresando su número correspondiente.
 
    ![Paso 1: Ingresar puntos](img/1.png)
