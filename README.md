@@ -21,8 +21,6 @@ Antes de ejecutar el proyecto, es **obligatorio** contar con lo siguiente:
 
 
 
-https://drive.google.com/file/d/1NZvPvByfSlS5ANVzjPsjd662NCzqUqwQ/view?usp=sharing
-
 [![Tutorial TOMTOM API KEY](img/video_preview.png)](https://drive.google.com/file/d/1NZvPvByfSlS5ANVzjPsjd662NCzqUqwQ/view?usp=sharing)
 
 ---
