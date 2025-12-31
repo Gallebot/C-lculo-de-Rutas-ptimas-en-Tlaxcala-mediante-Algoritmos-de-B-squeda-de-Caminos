@@ -53,13 +53,16 @@ Es necesario seguir estos pasos **en orden**:
 Ejecución
 
 1. Se solicitarán las coordenadas del punto del que se desee partir, si se teclea "1" se pueden ingresar las coordenadas manualmente en el formato **(19.323118, -98.233548)** o para mayor comodidad, se teclea "2" para utilizar un punto de los sugeridos en la lista tecleando su número correspondiente.
+![Paso 1: Ingresar puntos](img/1.png)
 2. Una vez ingresado el punto de partida, se pregunta si se desea agregar otro punto, se teclea "s" para **Si* y "n" para **No**.
+![Paso 2: Agregar más puntos opcionales](img/2.png)
 3. En caso de seleccionar **Si**, se solicitarán una vez más las coordenadas.
    Este proceso puede realizarse para cualquier número de puntos, la única limitante son los tokens de TOMTOM API KEY, como recomendación, 14 puntos es el límite de los créditos disponibles en la versión gratuita de dicha API.
 4. Una vez se seleccione que ya no se quieren ingresar más puntos, se preguntará el tipo de viaje que se desea realizar:
    Teclear "1" para elegir el viaje en **Auto**.
    Teclear "2" para elegir el viaje **Caminando**.
 Se importará automaticamente el archivo .plk para una ejecución más rápida
+![Paso 3: Ingresar el tipo de viaje](img/3.png)
 
 ---
 ## Resultados
