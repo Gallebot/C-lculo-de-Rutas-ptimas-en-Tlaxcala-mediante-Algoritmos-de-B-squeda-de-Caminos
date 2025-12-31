@@ -16,7 +16,7 @@ Antes de ejecutar el proyecto, es **obligatorio** contar con lo siguiente:
 
 > **Nota:**   
 > **Toda la ejecución se realiza desde Jupyter Notebook en Anaconda.**
-> **Es necesario agregar la API de TOMTOM mediante una variable de entorno en Windows
+> **Es necesario agregar la API de TOMTOM mediante una variable de entorno en Windows**
    Para ello, se puede seguir el siguiente tutorial:
 
 
